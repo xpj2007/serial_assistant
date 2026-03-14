@@ -44,25 +44,25 @@ void Widget::Serial_Set()
     QSerialPort::Parity parity=QSerialPort::NoParity;
     //波特率
     if(ui->baudrateCb->currentText()=="115200"){
-        QSerialPort::BaudRate baudrate=QSerialPort::Baud115200;
+        baudrate=QSerialPort::Baud115200;
     }else if(ui->baudrateCb->currentText()=="9600"){
-        QSerialPort::BaudRate baudrate=QSerialPort::Baud9600;
+        baudrate=QSerialPort::Baud9600;
     }else if(ui->baudrateCb->currentText()=="19200"){
-        QSerialPort::BaudRate baudrate=QSerialPort::Baud19200;
+        baudrate=QSerialPort::Baud19200;
     }else if(ui->baudrateCb->currentText()=="38400"){
-        QSerialPort::BaudRate baudrate=QSerialPort::Baud38400;
+        baudrate=QSerialPort::Baud38400;
     }else if(ui->baudrateCb->currentText()=="57600"){
-        QSerialPort::BaudRate baudrate=QSerialPort::Baud57600;
+        baudrate=QSerialPort::Baud57600;
     }
     //数据位
     if(ui->databitCb->currentText()=="8"){
-        QSerialPort::DataBits databits=QSerialPort::Data8;
+        databits=QSerialPort::Data8;
     }else if(ui->databitCb->currentText()=="7"){
-        QSerialPort::DataBits databits=QSerialPort::Data7;
+        databits=QSerialPort::Data7;
     }else if(ui->databitCb->currentText()=="6"){
-        QSerialPort::DataBits databits=QSerialPort::Data6;
+        databits=QSerialPort::Data6;
     }else if(ui->databitCb->currentText()=="5"){
-        QSerialPort::DataBits databits=QSerialPort::Data5;
+        databits=QSerialPort::Data5;
     }
     //校验位
     if(ui->checkbitCb->currentText()=="None"){
